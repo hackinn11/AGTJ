@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGTJ - Agencia de Marketing Digital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #282c34;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .nav {
+            background-color: #007BFF;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007BFF;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .service-card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .service-card button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .service-card button:hover {
+            background-color: #0056b3;
+        }
+        .social-section {
+            margin-top: 20px;
+        }
+        .social-section h3 {
+            color: #007BFF;
+        }
+        .price-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .price-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AGTJ - Agencia de Marketing Digital</h1>
+        <p>Transformando tu presencia digital con soluciones efectivas</p>
+    </div>
+
+    <div class="nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="container">
+        <div id="nosotros" class="section">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En AGTJ, somos expertos en marketing digital y nos dedicamos a potenciar la presencia online de nuestros clientes. Con un enfoque innovador y estrategias personalizadas, ayudamos a empresas y profesionales a alcanzar sus objetivos de crecimiento y engagement en redes sociales. Nuestro equipo está compuesto por profesionales con experiencia en gestión de redes sociales, publicidad en línea y desarrollo de contenido creativo.</p>
+        </div>
+
+        <div id="servicios" class="section">
+            <h2>Servicios que Ofrecemos</h2>
+            <p>Selecciona una red social para ver nuestros precios y paquetes de seguidores:</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Instagram</h3>
+                    <button onclick="showSocialSection('instagram')">Ver Más</button>
+                </div>
+                <div class="service-card">
+                    <h3>Facebook</h3>
+                    <button onclick="showSocialSection('facebook')">Ver Más</button>
+                </div>
+                <div class="service-card">
+                    <h3>TikTok</h3>
+                    <button onclick="showSocialSection('tiktok')">Ver Más</button>
+                </div>
+            </div>
+
+            <!-- Sección dinámica para Instagram -->
+            <div id="instagram" class="social-section" style="display:none;">
+                <h3>Paquetes de Seguidores para Instagram</h3>
+                <ul class="price-list">
+                    <li>1,000 Seguidores - $2.32 USD / $42.92 MXN</li>
+                    <li>1,500 Seguidores - $3.48 USD / $64.38 MXN</li>
+                    <li>2,000 Seguidores - $4.64 USD / $85.84 MXN</li>
+                    <li>2,500 Seguidores - $5.80 USD / $107.30 MXN</li>
+                    <li>3,000 Seguidores - $6.96 USD / $128.76 MXN</li>
+                    <li>3,500 Seguidores - $8.12 USD / $150.22 MXN</li>
+                    <li>4,000 Seguidores - $9.28 USD / $171.68 MXN</li>
+                    <li>4,500 Seguidores - $10.44 USD / $193.14 MXN</li>
+                    <li>5,000 Seguidores - $11.60 USD / $214.60 MXN</li>
+                    <li>5,500 Seguidores - $12.76 USD / $235.06 MXN</li>
+                    <li>6,000 Seguidores - $13.92 USD / $257.52 MXN</li>
+                    <li>6,500 Seguidores - $15.08 USD / $278.98 MXN</li>
+                    <li>7,000 Seguidores - $16.24 USD / $300.44 MXN</li>
+                    <li>7,500 Seguidores - $17.40 USD / $321.90 MXN</li>
+                    <li>8,000 Seguidores - $18.56 USD / $343.36 MXN</li>
+                    <li>8,500 Seguidores - $19.72 USD / $364.82 MXN</li>
+                    <li>9,000 Seguidores - $20.88 USD / $386.28 MXN</li>
+                    <li>9,500 Seguidores - $22.04 USD / $407.74 MXN</li>
+                    <li>10,000 Seguidores - $23.20 USD / $429.20 MXN</li>
+                </ul>
+            </div>
+
+            <!-- Sección dinámica para Facebook -->
+            <div id="facebook" class="social-section" style="display:none;">
+                <h3>Paquetes de Seguidores para Facebook</h3>
+                <ul class="price-list">
+                    <!-- Aquí puedes agregar los precios de Facebook si tienes alguno -->
+                    <li>Consulta personalizada disponible. Contáctanos para más detalles.</li>
+                </ul>
+            </div>
+
+            <!-- Sección dinámica para TikTok -->
+            <div id="tiktok" class="social-section" style="display:none;">
+                <h3>Paquetes de Seguidores para TikTok</h3>
+                <ul class="price-list">
+                    <li>1,000 Seguidores - $92.50 MXN</li>
+                    <li>1,500 Seguidores - $138.75 MXN</li>
+                    <li>2,000 Seguidores - $185.00 MXN</li>
+                    <li>2,500 Seguidores - $231.25 MXN</li>
+                    <li>3,000 Seguidores - $277.50 MXN</li>
+                    <li>3,500 Seguidores - $323.75 MXN</li>
+                    <li>4,000 Seguidores - $370.00 MXN</li>
+                    <li>4,500 Seguidores - $416.25 MXN</li>
+                    <li>5,000 Seguidores - $462.50 MXN</li>
+                    <li>5,500 Seguidores - $508.75 MXN</li>
+                    <li>6,000 Seguidores - $555.00 MXN</li>
+                    <li>6,500 Seguidores - $601.25 MXN</li>
+                    <li>7,000 Seguidores - $647.50 MXN</li>
+                    <li>7,500 Seguidores - $693.75 MXN</li>
+                    <li>8,000 Seguidores - $740.00 MXN</li>
+                    <li>8,500 Seguidores - $786.25 MXN</li>
+                    <li>9,000 Seguidores - $832.50 MXN</li>
+                    <li>9,500 Seguidores - $878.75 MXN</li>
+                    <li>10,000 Seguidores - $925.00 MXN</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si deseas obtener más información sobre nuestros servicios o tienes alguna consulta, no dudes en contactarnos.</p>
+            <p>Email: contacto@agtj.com</p>
+            <p>Teléfono: +52 123 456 7890</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 AGTJ. Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        function showSocialSection(social) {
+            document.getElementById('instagram').style.display = 'none';
+            document.getElementById('facebook').style.display = 'none';
+            document.getElementById('tiktok').style.display = 'none';
+            
+            document.getElementById(social).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
